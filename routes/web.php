@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\PortfolioController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,10 +15,28 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', [\App\Http\Controllers\WebController::class, 'index']) -> name('index');
+
+Route::group(['prefix' => '/myresume'], function () {
+    // Route::get('/portfolio1', function () {
+    //     return view('portfolio_1');
+    // })->name('personal.portfolio.1');
+
+    Route::get('/admin', function () {
+        return view('admin_portfolio');
+    })->name('admin.portfolio');
 });
 
-Auth::routes();
+Auth::routes([
+    'register' => false,
+]);
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function () {
+//     Route::get('/', function () {
+//         return view('admin_portfolio');
+//     })->name('admin.portfolio');
+// });
+
+Route::get('forgot-password', [\App\Http\Controllers\Auth\ForgotPasswordController::class, 'showLinkRequestForm'])->name('password.request');
+
+Route::resource('/portfolio', app\Http\Controllers\PortfolioController::class);
