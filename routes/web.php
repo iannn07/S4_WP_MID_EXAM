@@ -15,28 +15,16 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-Route::get('/', [\App\Http\Controllers\WebController::class, 'index']) -> name('index');
-
 Route::group(['prefix' => '/myresume'], function () {
-    // Route::get('/portfolio1', function () {
-    //     return view('portfolio_1');
-    // })->name('personal.portfolio.1');
-
-    Route::get('/admin', function () {
-        return view('admin_portfolio');
-    })->name('admin.portfolio');
+    Route::get('/home', [\App\Http\Controllers\WebController::class, 'home']) -> name('home');
 });
 
 Auth::routes([
     'register' => false,
 ]);
 
-// Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function () {
-//     Route::get('/', function () {
-//         return view('admin_portfolio');
-//     })->name('admin.portfolio');
-// });
-
-Route::get('forgot-password', [\App\Http\Controllers\Auth\ForgotPasswordController::class, 'showLinkRequestForm'])->name('password.request');
-
-Route::resource('/portfolio', app\Http\Controllers\PortfolioController::class);
+Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function () {
+    Route::get('/', [\App\Http\Controllers\WebController::class, 'admin']) -> name('admin.portfolio');
+    Route::get('/profile', [\App\Http\Controllers\WebController::class, 'profile']) -> name('admin.profile');
+    Route::get('/edit', [\App\Http\Controllers\WebController::class, 'edit']) -> name('admin.edit');
+});
