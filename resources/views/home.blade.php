@@ -17,32 +17,35 @@
 
                     <div class="col-lg-7">
                         <div class="about-descr">
-                                <h3>Pristian Budi Dharmawan</h3>
-                                <p class="fst-italic">
-                                    Hi, I'm an undergraduate at BINUS University with a Computer Science Major. I'm interested in Data Analysis, Medical, and Automotive. Currently, I'm focusing on Data Visualization using R, Python, and Web Programming based on the Laravel Framework, despite of it I am still expanding my knowledge of Microsoft Excel too.
-                                </p>
-                                <div class="row">
-                                    <div class="col-lg">
-                                        <ul>
-                                            <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong>
-                                                <span>pristian.dharmawan@gmail.com</span>
-                                            </li>
-                                            <li><i class="bi bi-chevron-right"></i> <strong>City:</strong>
-                                                <span>Malang City, East Java, Indonesia</span>
-                                            </li>
-                                            <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong>
-                                                <span>Bachelor</span>
-                                            </li>
-                                        </ul>
-                                    </div>
+                            <h3>Pristian Budi Dharmawan</h3>
+                            <p class="fst-italic">
+                                Hi, I'm an undergraduate at BINUS University with a Computer Science Major. I'm interested
+                                in Data Analysis, Medical, and Automotive. Currently, I'm focusing on Data Visualization
+                                using R, Python, and Web Programming based on the Laravel Framework, despite of it I am
+                                still expanding my knowledge of Microsoft Excel too.
+                            </p>
+                            <div class="row">
+                                <div class="col-lg">
+                                    <ul>
+                                        <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong>
+                                            <span>pristian.dharmawan@gmail.com</span>
+                                        </li>
+                                        <li><i class="bi bi-chevron-right"></i> <strong>City:</strong>
+                                            <span>Malang City, East Java, Indonesia</span>
+                                        </li>
+                                        <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong>
+                                            <span>Bachelor</span>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <p>
-                                    Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt
-                                    adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-                                    Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus
-                                    itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis
-                                    culpa magni laudantium dolores.
-                                </p>
+                            </div>
+                            <p>
+                                Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt
+                                adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
+                                Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus
+                                itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis
+                                culpa magni laudantium dolores.
+                            </p>
                         </div>
 
                     </div>
@@ -126,8 +129,36 @@
                 <div class="section-title text-center">
                     <h2>My Journey</h2>
                 </div>
-            </div>
 
+                <div class="journal-block">
+                    <div class="row">
+                        <table class="table table-hover table-bordered">
+                            <thead style="text-align: center">
+                                <tr>
+                                    <th>No</th>
+                                    <th>Job Title</th>
+                                    <th>Job Location</th>
+                                    <th>Job Description</th>
+                                    <th>Month</th>
+                                    <th>Year</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach ($data as $index => $item)
+                                    <tr>
+                                        <td>{{ $index + 1 }}</td>
+                                        <td>{{ $item->Job_Title }}</td>
+                                        <td>{{ $item->Job_Location }}</td>
+                                        <td>{{ $item->Job_Description }}</td>
+                                        <td>{{ $item->Month }}</td>
+                                        <td>{{ $item->Year }}</td>
+                                    </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
 
 
         </div><!-- End Portfolio Section -->

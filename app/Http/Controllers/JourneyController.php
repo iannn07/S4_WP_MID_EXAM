@@ -7,6 +7,10 @@ use Illuminate\Http\Request;
 
 class JourneyController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      */
@@ -56,7 +60,9 @@ class JourneyController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $data = Journey::findOrFail($id);
+
+        return view('Journey.edit', compact('data'));
     }
 
     /**
@@ -64,7 +70,16 @@ class JourneyController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $Journey = Journey::findOrFail($id);
+        $Journey->Job_Title = $request->Job_Title;
+        $Journey->Job_Location = $request->Job_Location;
+        $Journey->Job_Description = $request->Job_Description;
+        $Journey->Month = $request->Month;
+        $Journey->Year = $request->Year;
+        $Journey->save();
+
+
+        return redirect()->route('journey.index');
     }
 
     /**
@@ -72,6 +87,9 @@ class JourneyController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $Journey = Journey::findOrFail($id);
+        $Journey->delete();
+
+        return redirect()->route('journey.index');
     }
 }

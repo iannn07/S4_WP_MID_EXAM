@@ -55,20 +55,21 @@
             <div class="container">
                 <div class="card card-4 journal-block">
                     <div class="card-body">
-                        <h2 class="title">Add Job Experience</h2>
-                        <form action="{{ route('journey.store') }}" method="POST">
+                        <h2 class="title">Edit Job Experience</h2>
+                        <form action="{{ route('journey.update', $data->id) }}" method="POST">
                             @csrf
+                            @method('put')
                             <div class="row row-space">
                                 <div class="col-2">
                                     <div class="input-group">
                                         <label class="label">Job Title</label>
-                                        <input class="input--style-4" type="text" name="Job_Title">
+                                        <input class="input--style-4" type="text" name="Job_Title" value="{{ $data->Job_Title }}">
                                     </div>
                                 </div>
                                 <div class="col-2">
                                     <div class="input-group">
                                         <label class="label">Job Location</label>
-                                        <input class="input--style-4" type="text" name="Job_Location">
+                                        <input class="input--style-4" type="text" name="Job_Location" value="{{ $data->Job_Location }}">
                                     </div>
                                 </div>
                             </div>
@@ -76,13 +77,13 @@
                                 <div class="col-2">
                                     <div class="input-group">
                                         <label class="label">Month Start</label>
-                                        <input class="input--style-4" type="number" name="Month">
+                                        <input class="input--style-4" type="number" name="Month" value="{{ $data->Month }}">
                                     </div>
                                 </div>
                                 <div class="col-2">
                                     <div class="input-group">
                                         <label class="label">Year Start</label>
-                                        <input class="input--style-4" type="number" name="Year">
+                                        <input class="input--style-4" type="number" name="Year" value="{{ $data->Year }}">
                                     </div>
                                 </div>
                             </div>
@@ -90,13 +91,13 @@
                                 <div class="col-12">
                                     <div class="input-group">
                                         <label class="label">Job Description</label>
-                                        <input class="input--style-4" type="text" name="Job_Description">
+                                        <input class="input--style-4" type="text" name="Job_Description" value="{{ $data->Job_Description }}">
                                     </div>
                                 </div>
                             </div>
                             <div class="p-t-15 text-center">
                                 <button class="mx-2 btn btn--radius-2 btn--blue" type="submit">Submit</button>
-                                <a href="{{ route('journey.index') }}" class="mx-2 btn btn--radius-2 btn-danger">Back</a>
+                                <a href="{{ route('journey.index') }}" class="mx-2 btn btn--radius-2 btn-danger">Cancel</a>
                             </div>
                         </form>
                     </div>

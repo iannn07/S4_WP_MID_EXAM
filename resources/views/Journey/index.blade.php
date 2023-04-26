@@ -57,12 +57,28 @@
                                 @foreach ($data as $index => $item)
                                     <tr>
                                         <td>{{ $index + 1 }}</td>
-                                        <td>{{ $item -> Job_Title }}</td>
-                                        <td>{{ $item -> Job_Location }}</td>
-                                        <td>{{ $item -> Job_Description }}</td>
-                                        <td>{{ $item -> Month }}</td>
-                                        <td>{{ $item -> Year }}</td>
-                                        {{-- <td>{{ $item ->  }}</td> --}}
+                                        <td>{{ $item->Job_Title }}</td>
+                                        <td>{{ $item->Job_Location }}</td>
+                                        <td>{{ $item->Job_Description }}</td>
+                                        <td>{{ $item->Month }}</td>
+                                        <td>{{ $item->Year }}</td>
+                                        <td>
+                                            <div class="d-flex justify-content-center">
+                                                <a href="{{ route('journey.edit', $item->id) }}"
+                                                    class="mx-2 btn btn-warning btn-sm"><i class="bi bi-pencil"></i></a>
+                                                <form id="delete-journey-{{ $item->id }}"
+                                                    action="{{ route('journey.destroy', $item->id) }}" method="POST"
+                                                    style="display: inline-block;">
+                                                    @csrf
+                                                    @method('delete')
+                                                    <button type="submit" class="mx-2 btn btn-danger btn-sm"
+                                                        onclick="return confirm('Are you sure you want to delete this journey?')">
+                                                        <i class="bi bi-trash"></i>
+                                                        Delete
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </td>
                                     </tr>
                                 @endforeach
                             </tbody>
