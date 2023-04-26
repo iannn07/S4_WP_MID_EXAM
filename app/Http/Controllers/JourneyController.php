@@ -22,7 +22,8 @@ class JourneyController extends Controller
      */
     public function create()
     {
-        //
+
+        return view('Journey.create');
     }
 
     /**
@@ -30,7 +31,16 @@ class JourneyController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $newJourney = new Journey();
+        $newJourney->Job_Title = $request->Job_Title;
+        $newJourney->Job_Location = $request->Job_Location;
+        $newJourney->Job_Description = $request->Job_Description;
+        $newJourney->Month = $request->Month;
+        $newJourney->Year = $request->Year;
+        $newJourney->save();
+
+
+        return redirect()->route('journey.index');
     }
 
     /**
