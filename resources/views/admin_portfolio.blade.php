@@ -1,4 +1,41 @@
 @extends('layouts.admin_portfolio')
+@section('navigation_left')
+<div class="sidebar-content js-simplebar">
+    <a class="sidebar-brand" href="{{ route('admin.portfolio') }}">
+        <span class="align-middle">Ian Admin</span>
+    </a>
+
+    <ul class="sidebar-nav">
+        <li class="sidebar-header">
+            Pages
+        </li>
+
+        <li class="sidebar-item active" id="dashboard" onclick="selectChannel(this)">
+            <a class="sidebar-link" href="{{ route('admin.portfolio') }}">
+                <i class="align-middle" data-feather="sliders"></i> <span
+                    class="align-middle">Dashboard</span>
+            </a>
+        </li>
+
+        <li class="sidebar-item" id="profile" onclick="selectChannel(this)">
+            <a class="sidebar-link" href="{{ route('admin.profile') }}">
+                <i class="align-middle" data-feather="user"></i> <span class="align-middle">Profile</span>
+            </a>
+        </li>
+
+        <li class="sidebar-header">
+            Edit Profile
+        </li>
+
+        <li class="sidebar-item" id="btn" onclick="selectChannel(this)">
+            <a class="sidebar-link" href="{{ route('admin.edit') }}">
+                <i class="align-middle" data-feather="settings"></i> <span class="align-middle">Edit
+                    Website</span>
+            </a>
+        </li>
+    </ul>
+</div>
+@endsection
 @section('admin_content')
     <div class="float-left">
         <main class="content">

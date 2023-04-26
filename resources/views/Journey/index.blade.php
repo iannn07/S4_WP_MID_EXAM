@@ -26,24 +26,15 @@
 
     <!-- Template Main CSS File -->
     <link href="{{ asset('Web Assets/css/style.css') }}" rel="stylesheet">
-
-    <!-- =======================================================
-  * Template Name: Folio
-  * Updated: Mar 10 2023 with Bootstrap v5.2.3
-  * Template URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
-
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top ">
         <div class="container d-flex align-items-center justify-content-between">
 
-            <a href="{{ route('home') }}" class="logo"><img src="{{ asset('Web Assets/img/logo.png') }}" alt=""
-                    class="img-fluid"></a>
+            <a href="{{ route('home') }}" class="logo"><img src="{{ asset('Web Assets/img/logo.png') }}"
+                    alt="" class="img-fluid"></a>
             <!-- Uncomment below if you prefer to use an text logo -->
             <!-- <h1 class="logo"><a href="index.html">Folio</a></h1> -->
 
@@ -60,26 +51,51 @@
         </div>
     </header><!-- End Header -->
 
-    <!-- ======= Hero Section ======= -->
-    <div id="hero" class="home">
+    <main id="main">
+        <!-- ======= Portfolio Section ======= -->
+        <div id="journey" class="paddsection">
 
-        <div class="container">
-            <div class="hero-content">
-                <h1>Hi, Ian here!</h1>
-                <p>I'm a <span class="typed"
-                        data-typed-items="Data Analyst, Medical Enthusiast, Full-Stack Developer"></span>
-                </p>
-
-                <ul class="list-unstyled list-social">
-                    <li><a href="https://github.com/iannn07"><i class="bi bi-github" style="font-size: 24px"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/pristian-budi-dharmawan/"><i
-                                class="bi bi-linkedin" style="font-size: 24px"></i></a></li>
-                    <li><a href="https://www.instagram.com/iann__07/"><i class="bi bi-instagram" style="font-size: 24px"></i></a></li>
-                </ul>
+            <div class="container">
+                <div class="section-title text-center">
+                    <h2>My Journey</h2>
+                </div>
             </div>
-        </div>
-    </div><!-- End Hero -->
-    @yield('content')
+            <div class="container">
+                <div class="journal-block">
+                    <div class="row">
+                        <table class="table table-hover table-bordered">
+                            <thead style="text-align: center">
+                                <tr>
+                                    <th>No</th>
+                                    <th>Job Title</th>
+                                    <th>Job Location</th>
+                                    <th>Job Description</th>
+                                    <th>Month</th>
+                                    <th>Year</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach ($data as $index => $item)
+                                    <tr>
+                                        <td>{{ $index + 1 }}</td>
+                                        <td>{{ $item -> Job_Title }}</td>
+                                        <td>{{ $item -> Job_Location }}</td>
+                                        <td>{{ $item -> Job_Description }}</td>
+                                        <td>{{ $item -> Month }}</td>
+                                        <td>{{ $item -> Year }}</td>
+                                        {{-- <td>{{ $item ->  }}</td> --}}
+                                    </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+                        <a href="{{ route('journey.create') }}" class="btn btn-primary">Add</a>
+                    </div>
+                </div>
+            </div>
+        </div><!-- End Portfolio Section -->
+    </main><!-- End #main -->
+
     <!-- Vendor JS Files -->
     <script src="{{ asset('Web Assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('Web Assets/vendor/glightbox/js/glightbox.min.js') }}"></script>

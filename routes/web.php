@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Auth;
 
 Route::group(['prefix' => '/myresume'], function () {
     Route::get('/home', [\App\Http\Controllers\WebController::class, 'home']) -> name('home');
+    Route::resource('/journey', \App\Http\Controllers\JourneyController::class);
 });
 
 Auth::routes([
@@ -24,7 +25,7 @@ Auth::routes([
 ]);
 
 Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function () {
-    Route::get('/', [\App\Http\Controllers\WebController::class, 'admin']) -> name('admin.portfolio');
+    Route::get('/dashboard', [\App\Http\Controllers\WebController::class, 'admin']) -> name('admin.portfolio');
     Route::get('/profile', [\App\Http\Controllers\WebController::class, 'profile']) -> name('admin.profile');
     Route::get('/edit', [\App\Http\Controllers\WebController::class, 'edit']) -> name('admin.edit');
 });

@@ -11,11 +11,10 @@
         content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="shortcut icon" href="{{ asset('Admin Assets/img/icons/icon-48x48.png') }}" />
 
     <link rel="canonical" href="https://demo-basic.adminkit.io/" />
     {{-- Used for Title Icon --}}
-    <link type="image/x-icon" href="https://media.giphy.com/media/WNTnNwVIpVsKYCwweJ/giphy.gif" rel="icon">
+    <link type="image/x-icon" href="{{ asset('Admin Assets/img/icons/favicon.png') }}" rel="icon">
     <title>Ian Admin</title>
 
     <link href="{{ asset('Admin Assets/css/app.css') }}" rel="stylesheet">
@@ -25,41 +24,7 @@
 <body>
     <div class="wrapper float-left">
         <nav id="sidebar" class="sidebar js-sidebar">
-            <div class="sidebar-content js-simplebar">
-                <a class="sidebar-brand" href="{{ route('admin.portfolio') }}">
-                    <span class="align-middle">Ian Admin</span>
-                </a>
-
-                <ul class="sidebar-nav">
-                    <li class="sidebar-header">
-                        Pages
-                    </li>
-
-                    <li class="sidebar-item" id="dashboard" onclick="selectChannel(this)">
-                        <a class="sidebar-link" href="{{ route('admin.portfolio') }}">
-                            <i class="align-middle" data-feather="sliders"></i> <span
-                                class="align-middle">Dashboard</span>
-                        </a>
-                    </li>
-
-                    <li class="sidebar-item" id="profile" onclick="selectChannel(this)">
-                        <a class="sidebar-link" href="{{ route('admin.profile') }}">
-                            <i class="align-middle" data-feather="user"></i> <span class="align-middle">Profile</span>
-                        </a>
-                    </li>
-
-                    <li class="sidebar-header">
-                        Edit Profile
-                    </li>
-
-                    <li class="sidebar-item" id="btn" onclick="selectChannel(this)">
-                        <a class="sidebar-link" href="{{ route('admin.edit') }}">
-                            <i class="align-middle" data-feather="settings"></i> <span class="align-middle">Edit
-                                Website</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            @yield('navigation_left')
         </nav>
 
         <div class="main">

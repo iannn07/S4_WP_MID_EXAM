@@ -17,13 +17,32 @@
 
                     <div class="col-lg-7">
                         <div class="about-descr">
-
-                            <p class="p-heading">im a ux /ui designer austin based who loves clean, simple & unique design.
-                                i also enjoy crafting brand identities, icons, & ilustration work. </p>
-                            <p class="separator">To an English person, it will seem like simplified English, as a skeptical
-                                Cambridge friend of mine told me what Occidental is. The European languages are members of
-                                the same family.English person.</p>
-
+                                <h3>Pristian Budi Dharmawan</h3>
+                                <p class="fst-italic">
+                                    Hi, I'm an undergraduate at BINUS University with a Computer Science Major. I'm interested in Data Analysis, Medical, and Automotive. Currently, I'm focusing on Data Visualization using R, Python, and Web Programming based on the Laravel Framework, despite of it I am still expanding my knowledge of Microsoft Excel too.
+                                </p>
+                                <div class="row">
+                                    <div class="col-lg">
+                                        <ul>
+                                            <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong>
+                                                <span>pristian.dharmawan@gmail.com</span>
+                                            </li>
+                                            <li><i class="bi bi-chevron-right"></i> <strong>City:</strong>
+                                                <span>Malang City, East Java, Indonesia</span>
+                                            </li>
+                                            <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong>
+                                                <span>Bachelor</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p>
+                                    Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt
+                                    adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
+                                    Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus
+                                    itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis
+                                    culpa magni laudantium dolores.
+                                </p>
                         </div>
 
                     </div>
@@ -101,129 +120,17 @@
         </div><!-- End Services Section -->
 
         <!-- ======= Portfolio Section ======= -->
-        <div id="portfolio" class="paddsection">
+        <div id="journey" class="paddsection">
 
             <div class="container">
                 <div class="section-title text-center">
-                    <h2>My Portfolio</h2>
+                    <h2>My Journey</h2>
                 </div>
             </div>
 
-            <div class="container">
 
-                <div class="row portfolio-container">
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <img src="{{ asset('Web Assets/img/portfolio/portfolio-1.jpg') }}" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>App 1</h4>
-                            <p>App</p>
-                            <a href="{{ asset('Web Assets/img/portfolio/portfolio-1.jpg') }}" data-gallery="portfolioGallery"
-                                class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-                            <a href="portfolio-details.html" class="details-link" title="More Details"><i
-                                    class="bx bx-link"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                        <img src="{{ asset('Web Assets/img/portfolio/portfolio-2.jpg') }}" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Web 3</h4>
-                            <p>Web</p>
-                            <a href="{{ asset('Web Assets/img/portfolio/portfolio-2.jpg') }}" data-gallery="portfolioGallery"
-                                class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-                            <a href="portfolio-details.html" class="details-link" title="More Details"><i
-                                    class="bx bx-link"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <img src="{{ asset('Web Assets/img/portfolio/portfolio-3.jpg') }}" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>App 2</h4>
-                            <p>App</p>
-                            <a href="{{ asset('Web Assets/img/portfolio/portfolio-3.jpg') }}" data-gallery="portfolioGallery"
-                                class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-                            <a href="portfolio-details.html" class="details-link" title="More Details"><i
-                                    class="bx bx-link"></i></a>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
 
         </div><!-- End Portfolio Section -->
-
-        <!-- ======= Journal Section ======= -->
-        <div id="journal" class="text-left paddsection">
-
-            <div class="container">
-                <div class="section-title text-center">
-                    <h2>journal</h2>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="journal-block">
-                    <div class="row">
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="journal-info">
-
-                                <a href="blog-single.html"><img src="{{ asset('Web Assets/img/blog-post-1.jpg') }}" class="img-responsive"
-                                        alt="img"></a>
-
-                                <div class="journal-txt">
-
-                                    <h4><a href="blog-single.html">SO LETS MAKE THE MOST IS BEAUTIFUL</a></h4>
-                                    <p class="separator">To an English person, it will seem like simplified English
-                                    </p>
-
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="journal-info">
-
-                                <a href="blog-single.html"><img src="{{ asset('Web Assets/img/blog-post-2.jpg') }}" class="img-responsive"
-                                        alt="img"></a>
-
-                                <div class="journal-txt">
-
-                                    <h4><a href="blog-single.html">WE'RE GONA MAKE DREAMS COMES</a></h4>
-                                    <p class="separator">To an English person, it will seem like simplified English
-                                    </p>
-
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="journal-info">
-
-                                <a href="blog-single.html"><img src="{{ asset('Web Assets/img/blog-post-3.jpg') }}" class="img-responsive"
-                                        alt="img"></a>
-
-                                <div class="journal-txt">
-
-                                    <h4><a href="blog-single.html">NEW LIFE CIVILIZATIONS TO BOLDLY</a></h4>
-                                    <p class="separator">To an English person, it will seem like simplified English
-                                    </p>
-
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-        </div><!-- End Journal Section -->
 
         <!-- ======= Contact Section ======= -->
         <div id="contact" class="paddsection">
@@ -303,10 +210,10 @@
             <div class="socials-media text-center">
 
                 <ul class="list-unstyled">
-                    <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-                    <li><a href="#"><i class="bi bi-twitter"></i></a></li>
-                    <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-                    <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                    <li><a href="https://github.com/iannn07"><i class="bi bi-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/pristian-budi-dharmawan/"><i class="bi bi-linkedin"></i></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/iann__07/"><i class="bi bi-instagram"></i></a></li>
                 </ul>
 
             </div>
