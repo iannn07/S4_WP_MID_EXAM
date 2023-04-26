@@ -11,14 +11,14 @@
         content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="shortcut icon" href="{{ asset('img/icons/icon-48x48.png') }}" />
+    <link rel="shortcut icon" href="{{ asset('Admin Assets/img/icons/icon-48x48.png') }}" />
 
     <link rel="canonical" href="https://demo-basic.adminkit.io/" />
     {{-- Used for Title Icon --}}
     <link type="image/x-icon" href="https://media.giphy.com/media/WNTnNwVIpVsKYCwweJ/giphy.gif" rel="icon">
     <title>Ian Admin</title>
 
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('Admin Assets/css/app.css') }}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
@@ -73,7 +73,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#"
                                 data-bs-toggle="dropdown">
-                                <img src="{{ asset('img/avatars/Chipmunk.jpeg') }}"
+                                <img src="{{ asset('Admin Assets/img/avatars/Chipmunk.jpeg') }}"
                                     class="avatar img-fluid rounded me-1" alt="Ian" /> <span
                                     class="text-dark">Ian</span>
                             </a>
@@ -99,7 +99,7 @@
         </div>
     </div>
 
-    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('Admin Assets/js/app.js') }}"></script>
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
