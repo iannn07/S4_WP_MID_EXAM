@@ -131,6 +131,11 @@ p {
   padding-bottom: 90px;
 }
 
+.paddsection-contact {
+  padding-top: 0;
+  padding-bottom: 90px;
+}
+
 .paddsections {
   padding-top: 90px;
   padding-bottom: 90px !important;
@@ -599,7 +604,7 @@ p {
 #services {
   background: #f7f7f7;
   position: relative;
-  padding-bottom: 80px;
+  padding-bottom: 50px;
 }
 
 .services-block span {

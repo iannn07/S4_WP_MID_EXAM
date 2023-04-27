@@ -54,8 +54,7 @@
                             <div class="services-block">
                                 <i class="bi bi-database-check d-flex justify-content-center"></i>
                                 <span class="d-flex justify-content-center">FULL-STACK</span>
-                                <p class="separator" style="text-align: center">To an English person, it will seem like
-                                    simplified English,told me what
+                                <p class="separator" style="text-align: center">My second goal in my career.
                                 </p>
                             </div>
                         </div><!-- End testimonial item -->
@@ -64,8 +63,7 @@
                             <div class="services-block">
                                 <i class="bi bi-card-checklist d-flex justify-content-center"></i>
                                 <span class="d-flex justify-content-center">DATA ANALYST</span>
-                                <p class="separator" style="text-align: center">To an English person, it will seem like
-                                    simplified English,told me what
+                                <p class="separator" style="text-align: center">The first goals in my career.
                                 </p>
                             </div>
                         </div><!-- End testimonial item -->
@@ -74,8 +72,8 @@
                             <div class="services-block">
                                 <i class="bi bi-bar-chart d-flex justify-content-center"></i>
                                 <span class="d-flex justify-content-center">STATISTICS</span>
-                                <p class="separator" style="text-align: center">To an English person, it will seem like
-                                    simplified English,told me what
+                                <p class="separator" style="text-align: center">I'm in love with Regression, Distribution,
+                                    and others!
                                 </p>
                             </div>
                         </div><!-- End testimonial item -->
@@ -84,8 +82,7 @@
                             <div class="services-block">
                                 <i class="bi bi-heart-pulse-fill d-flex justify-content-center"></i>
                                 <span class="d-flex justify-content-center">MEDICAL</span>
-                                <p class="separator" style="text-align: center">To an English person, it will seem like
-                                    simplified English,told me what
+                                <p class="separator" style="text-align: center">I'm also interested in medical field, especially in cardiovascular.
                                 </p>
                             </div>
                         </div><!-- End testimonial item -->
@@ -136,7 +133,7 @@
         </div><!-- End Portfolio Section -->
 
         <!-- ======= Contact Section ======= -->
-        <div id="contact" class="paddsection">
+        <div id="contact" class="paddsection-contact">
             <div class="container justify-content-center" style="text-align: center">
                 <div class="contact-block1">
                     <div class="row">
