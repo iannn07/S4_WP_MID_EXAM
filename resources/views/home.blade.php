@@ -103,8 +103,8 @@
 
                 <div class="journal-block">
                     <div class="row">
-                        <table class="table table-hover table-bordered align-middle">
-                            <thead style="text-align: center; vertical-align: middle; font-size:16px">
+                        <table class="table table-hover align-middle">
+                            <thead class="table table-bordered" style="text-align: center; vertical-align: middle; font-size:16px">
                                 <tr>
                                     <th>Job Title</th>
                                     <th>Job Location</th>
