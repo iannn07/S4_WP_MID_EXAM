@@ -11,4 +11,5 @@ Any further question kindly asked me thru pristian.dharmawan@binus.ac.id
 However, I've already put the database folder inside of "resources/database" kindly import it first inside the new database namely "s4_wp_me".
 
 Username: admin@gmail.com
+
 Pass: roottoor
