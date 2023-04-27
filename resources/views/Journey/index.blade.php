@@ -62,8 +62,8 @@
                                         <td>{{ $item->Year }}</td>
                                         <td>
                                             <div class="d-flex justify-content-center">
-                                                <a href="{{ route('journey.edit', $item->id) }}"
-                                                    class="mx-2 btn btn-warning btn-sm"><i class="bi bi-pencil"></i></a>
+                                                <button href="{{ route('journey.edit', $item->id) }}"
+                                                    class="mx-2 btn btn-warning btn-sm"><i class="bi bi-pencil"></i></button>
                                                 <form id="delete-journey-{{ $item->id }}"
                                                     action="{{ route('journey.destroy', $item->id) }}" method="POST"
                                                     style="display: inline-block;">
@@ -80,7 +80,7 @@
                                 @endforeach
                             </tbody>
                         </table>
-                        <a href="{{ route('journey.create') }}" class="btn btn-primary">Add</a>
+                        <button href="{{ route('journey.create') }}" class="btn btn-primary">Add</button>
                     </div>
                 </div>
             </div>
