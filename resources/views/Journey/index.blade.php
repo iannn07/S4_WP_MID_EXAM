@@ -72,7 +72,6 @@
                                                     <button type="submit" class="mx-2 btn btn-danger btn-sm"
                                                         onclick="return confirm('Are you sure you want to delete this journey?')">
                                                         <i class="bi bi-trash"></i>
-                                                        Delete
                                                     </button>
                                                 </form>
                                             </div>
