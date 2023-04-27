@@ -43,7 +43,7 @@
                                     class="text-dark">Ian</span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-end">
-                                <a class="dropdown-item"><i class="align-middle me-1" data-feather="user"></i>
+                                <a class="dropdown-item" href="{{ route('home') }}"><i class="align-middle me-1" data-feather="user"></i>
                                     Profile</a>
                                 <a class="dropdown-item" href="mailto: pristian.dharmawan@binus.ac.id"><i
                                         class="align-middle me-1" data-feather="help-circle"></i> Send Email</a>

@@ -15,19 +15,21 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-Route::group(['prefix' => '/myresume'], function () {
-    Route::get('/home', function () {
-        $data = \App\Models\Journey::all();
-        return view('home', compact('data'));
-    })->name('home');
-    Route::resource('/journey', \App\Http\Controllers\JourneyController::class);
-});
+Route::get('/home', function () {
+    $data = \App\Models\Journey::all();
+    return view('home', compact('data'));
+})->name('home');
 
 Auth::routes([
     'register' => false,
 ]);
 
-Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function () {
+Route::prefix('admin')->group(function () {
+    Auth::routes(['login' => 'admin/login']);
+});
+
+Route::group(['prefix' => '/admin', 'middleware' => ['auth']], function () {
+    Route::resource('/journey', \App\Http\Controllers\JourneyController::class);
     Route::get('/dashboard', [\App\Http\Controllers\WebController::class, 'admin'])->name('admin.portfolio');
     Route::get('/profile', [\App\Http\Controllers\WebController::class, 'profile'])->name('admin.profile');
     Route::get('/edit', [\App\Http\Controllers\WebController::class, 'edit'])->name('admin.edit');

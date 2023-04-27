@@ -38,13 +38,12 @@
                     <h2>My Journey</h2>
                 </div>
             </div>
-            <div class="container">
+            <div class="container" style="font-size: 12px;">
                 <div class="journal-block">
                     <div class="row">
-                        <table class="table table-hover table-bordered">
-                            <thead style="text-align: center">
+                        <table class="table table-hover table-bordered align-middle">
+                            <thead style="text-align: center; vertical-align: middle">
                                 <tr>
-                                    <th>No</th>
                                     <th>Job Title</th>
                                     <th>Job Location</th>
                                     <th>Job Description</th>
@@ -56,7 +55,6 @@
                             <tbody>
                                 @foreach ($data as $index => $item)
                                     <tr>
-                                        <td>{{ $index + 1 }}</td>
                                         <td>{{ $item->Job_Title }}</td>
                                         <td>{{ $item->Job_Location }}</td>
                                         <td>{{ $item->Job_Description }}</td>

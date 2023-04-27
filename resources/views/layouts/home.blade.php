@@ -42,7 +42,7 @@
     <header id="header" class="fixed-top ">
         <div class="container d-flex align-items-center justify-content-between">
 
-            <a href="{{ route('home') }}" class="logo"><img src="{{ asset('Web Assets/img/logo.png') }}" alt=""
+            <a href="#hero" class="logo"><img src="{{ asset('Web Assets/img/logo.png') }}" alt=""
                     class="img-fluid"></a>
             <!-- Uncomment below if you prefer to use an text logo -->
             <!-- <h1 class="logo"><a href="index.html">Folio</a></h1> -->
@@ -80,17 +80,6 @@
         </div>
     </div><!-- End Hero -->
     @yield('content')
-    <!-- Vendor JS Files -->
-    <script src="{{ asset('Web Assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('Web Assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
-    <script src="{{ asset('Web Assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
-    <script src="{{ asset('Web Assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
-    <script src="{{ asset('Web Assets/vendor/typed.js/typed.min.js') }}"></script>
-    <script src="{{ asset('Web Assets/vendor/php-email-form/validate.js') }}"></script>
-
-    <!-- Template Main JS File -->
-    <script src="{{ asset('Web Assets/js/main.js') }}"></script>
-
 </body>
 
 </html>

@@ -96,6 +96,10 @@ p {
   margin-bottom: 70px;
 }
 
+.section-title-journey {
+ margin-bottom: 25px;
+}
+
 .section-title h2 {
   font-size: 25px;
   letter-spacing: 2px;
@@ -1073,8 +1077,8 @@ blockquote {
 --------------------------------------------------------------*/
 #footer {
   background: #f7f7f7;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 #footer .socials-media {
