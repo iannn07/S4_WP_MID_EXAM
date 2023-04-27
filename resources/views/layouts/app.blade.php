@@ -13,21 +13,20 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('Admin Assets/Login Assets/fonts/icomoon/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('Admin Assets/Login Assets/css/owl.carousel.min.css') }}">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="{{ asset('Admin Assets/Login Assets/css/bootstrap.min.css') }}">
-
-    <!-- Style -->
-    <link rel="stylesheet" href="{{ asset('Admin Assets/Login Assets/css/style.css') }}">
 
     <!-- Scripts -->
     @viteReactRefresh
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
-    <script src="{{ asset('Admin Assets/Login Assets/js/jquery-3.3.1.min.js') }}"></script>
-    <script src="{{ asset('Admin Assets/Login Assets/js/popper.min.js') }}"></script>
-    <script src="{{ asset('Admin Assets/Login Assets/js/bootstrap.min.js') }}"></script>
+
+    {{-- Login Assets --}}
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="{{ asset('Admin Assets/Login Assets/fonts/material-icon/css/material-design-iconic-font.min.css') }}">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="{{ asset('Admin Assets/Login Assets/css/style.css') }}">
+
+    <!-- JS -->
+    <script src="{{ asset('Admin Assets/Login Assets/vendor/jquery/jquery.min.js') }}"></script>
     <script src="{{ asset('Admin Assets/Login Assets/js/main.js') }}"></script>
 </head>
 
