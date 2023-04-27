@@ -8,7 +8,7 @@ Any further question kindly asked me thru pristian.dharmawan@binus.ac.id
 
 # LOGIN DATA
 ### Kindly import the database first in the PHPMyAdmin then run the login.
-However, I've already put the database folder inside of "resources/database" kindly import it first inside the new database namely "s4_wp_me".
+However, I've already put the database folder inside of "resources/database" kindly import it first inside the new database namely "s4_wp_me". Or you can access this link "http://127.0.0.1:8000/admin/register" to create a new account.
 
 Username: admin@gmail.com
 
