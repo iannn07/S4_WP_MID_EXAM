@@ -7,10 +7,10 @@ use Illuminate\Http\Request;
 
 class JourneyController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+    // public function __construct()
+    // {
+    //     $this->middleware('auth');
+    // }
     /**
      * Display a listing of the resource.
      */
@@ -18,7 +18,7 @@ class JourneyController extends Controller
     {
         $data = Journey::all();
 
-        return view('journey.index', compact('data'));
+        return view('Journey.index', compact('data'));
     }
 
     /**
