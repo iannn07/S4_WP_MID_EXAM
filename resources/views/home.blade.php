@@ -133,7 +133,7 @@
         </div><!-- End Portfolio Section -->
 
         <!-- ======= Contact Section ======= -->
-        <div id="contact" class="paddsection-contact">
+        <div id="contact" class="paddsection">
             <div class="container justify-content-center" style="text-align: center">
                 <div class="contact-block1">
                     <div class="row">
