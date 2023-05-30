@@ -107,6 +107,7 @@
                             <thead class="table table-bordered" style="text-align: center; vertical-align: middle; font-size:16px">
                                 <tr>
                                     <th>Job Title</th>
+                                    <th>Type</th>
                                     <th>Job Location</th>
                                     <th>Job Description</th>
                                     <th>Month</th>
@@ -116,7 +117,8 @@
                             <tbody style="font-size: 12px">
                                 @foreach ($data as $index => $item)
                                     <tr>
-                                        <td style="text-align: center">{{ $item->Job_Title }}</td>
+                                        <td>{{ $item->Job_Title }}</td>
+                                        <td style="text-align: center">{{ $item->category->name}}</td>
                                         <td style="text-align: center">{{ $item->Job_Location }}</td>
                                         <td>{{ $item->Job_Description }}</td>
                                         <td style="text-align: center">{{ $item->Month }}</td>
